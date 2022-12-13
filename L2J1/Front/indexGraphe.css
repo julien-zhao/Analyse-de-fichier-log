@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*Par défaut*/
+.container {
+    position: relative;
+    width: calc(49vw - 40px);
+    border-radius: 8px;
+    border: solid 1.9px rgb(158, 181, 202);
+    margin: 20px;
+}
+.container2 {
+    position: relative;
+    width: calc(33vw - 40px);
+    border-radius: 8px;
+    border: solid 1.9px rgb(158, 181, 202);
+    margin: 20px;
+}
+.graphe {
+    padding: 20px;
+}
+/*Pour laisser de la place entre la barre navigation et le contenu(les graphes)*/
+#container_nav,
+#container_jour {
+    margin-top: 30px;
+}
+#container_erreur {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 1.9px rgb(158, 181, 202);
+    border-radius: 8px;
+    align-items: flex-start;
+}
+/*Graphe Nombre d'erreur par jour et Erreur TOP 5*/
+.top-error {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 20%;
+    flex-direction: column;
+    color: #162b54;
+}
+#g_erreur {
+    width: 100%;
+}
+.erreur-title {
+    padding-top: 23px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#list_error>* {
+    padding-top: 20px;
+    margin-left: 10%;
+}
+/*Pour les 3 graphes Os, OS Mobile et OS PC*/
+#container_devOs {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 33vw;
+}
+/*Graphe TOP 5 IP, les 5 pages les plus visitées et Méta-données*/
+#container_list {
+    display: flex;
+}
+#container_list2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#top_ip,
+#top_page,
+#top_meta,
+#top_fichier {
+    padding: 20px;
+    text-align: left;
+    color: #162b54;
+}
+#top_page li,
+#top_meta li,
+#top_fichier li {
+    margin-left: 5%;
+}
+.list-title {
+    text-align: center;
+    margin: 10px;
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #98b0d2;
+    border-radius: 10px;
+    color: rgb(247, 244, 241);
+}
+ol.list-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    /* display: inline-block; */
+    /*text-align: left;*/
+}
+.list-top li {
+    margin: 10px;
+    font-size: 17px;
+}
+.container-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 8%;
+}
+.show-button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #6987b1;
+    border-radius: 10px;
+}
+.close-button {
+    border: none;
+    background-color: #5c79a1;
+    color: rgb(247, 244, 241);
+}
+.buttons button:hover {
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.keys {
+    font-weight: bolder;
+}
+.container-more {
+    text-align: left;
+}
+li::marker {
+    color: #748fb5;
+    content: counter(list-item) ")  ";
+}
+.message-error {
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 78vh;
+    font-size: 20px;
+    color: #162b54;
+}
+/*Pour mobile / fenêtre réduite*/
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .container2 {
+        width: 90%;
+    }
+    .container-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container_devOs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #container_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 4%;
+    }
+}

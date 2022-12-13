@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projet L2J1</title>
+</head>
+<body>
+	<h1>Projet L2J1</h1>
+	<ul>
+	
+	<li><a href="./meta?password=root&login=root">Meta</a></li>  
+		<pre>[{"Nb_line":25,"Ip_unique":17,"Dernier_date":"2015-05-20","Size_octets":5197.0}]</pre>
+	
+	<li><a href="./Logs?password=root&login=root">Logs</a></li>
+		<pre>{"Os":"Mac","IP":"183.149.9.216","Appareil":"PC","Request":200,"Navigateur":"Chrome","Info":"GET \/presentations\/logstash-monitorama-2013\/images\/kibana-search.png HTTP\/1.1","Heure":"10:05:03","Date":"17-05-2015","Url":"http:\/\/semicomplete.com\/presentations\/logstash-monitorama-2013\/"}</pre>
+	
+	<li><a href="./Date?password=root&login=root"">Nombres de connexions par date</a></li>
+		<pre>[{"date":"20-05-2015","occ":5}}</pre>
+		
+	<li><a href="./Heure?password=root&login=root"">Nombres de connexions par heure (non bdd)</a></li>
+		<pre>{"0":0,"1":0,"2":0,"3":0}</pre>
+		
+	<li><a href="./Navi?password=root&login=root">Nombre de navigateur</a></li>
+		<pre>[{"Nav":"Chrome","occ":4},{"Nav":"Safari","occ":1},{"Nav":"Firefox","occ":3},{"Nav":"Microsoft_edge","occ":0},{"Nav":"Internet_explorer","occ":0},{"Nav":"Autre","occ":17}]</pre>
+		
+	<li><a href="./Mobile?password=root&login=root">Nombre d'OS mobile</a></li>
+		<pre>[{"Autre_OS_Mobile":1.0,"IOS":0.0,"Android":0.0}]</pre>
+		
+	<li><a href="./OS?password=root&login=root"">Nombre pc et mobile</a></li>
+		<pre>[{"Pc":24.0,"Mobile":1.0}]</pre>
+		
+	<li><a href="./PC?password=root&login=root"">Nombre d'OS PC</a></li>
+		<pre>[{"Linux":2.0,"Windows":3.0,"Mac":4.0,"Autre_OS_PC":16.0}]</pre>
+		
+	<li><a href="./Erreur?password=root&login=root"">Erreur</a></li>
+		<pre>{"Succes":23,"Error":2}</pre>
+
+	<li><a href="./DiffError?password=root&login=root"">Different Erreur</a></li>
+		<pre>{"404":2}</pre>
+	
+	<li><a href="./Url?password=root&login=root"">Nombre de url unique (non bdd)</a></li>
+		<pre>[{"http:\/\/feedparser.org\/":1,"http:\/\/www.FeedBurner.com":1}]</pre>
+	
+	<li><a href="./UrlFichier?password=root&login=root"">Nombre de url téléchargées top5 (non bdd)</a></li>
+		<pre>[{"Url":"bot.html","Occ":5}]</pre>
+	
+	<li><a href="./Country?password=root&login=root"">Les pays des IP (non bdd)</a></li>
+		<pre>{"Netherlands": 1,"United States": 11}</pre>
+		
+	<li><a href="./PersonneTop5?password=root&login=root"">Information sur les top 5 IP (non bdd)</a></li>
+		<pre>[{"Occu":4,"DerniereConnexion":"17-05-2015:10:05:16","IP":"66.249.73.135","Navigateur":"Inconnu","Pays":"United States","Ville":null,"DerniereSiteConsulte":"http:\/\/www.google.com\/bot.html"}</pre>
+	
+	<li><a href="./Map?password=root&login=root"">Localisation complet d'une IP (non utilisé)</a></li>
+		<pre>[{"City":"Curitibanos","Longitude":-50.6134,"Pays":"Brazil","Postal":"89520"}]</pre>
+	
+	<li><a href="./Personne?password=root&login=root"">Nombre de personne (IP) unique (non utilisé)</a></li>
+		<pre>[{"107.170.9.55":1}]</pre>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #5c79a1;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.title {
+    margin: 25px;
+    text-align: center;
+    color: rgb(240, 235, 230);
+    font-size: 27px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.log-file {
+    background-color: rgb(240, 235, 230);
+    align-items: left;
+    margin-left: 40px;
+    margin-right: 27px;
+    margin-bottom: 40px;
+    width: 60vw;
+    height: 72vh;
+}
+
+.next-link {
+    text-decoration: none;
+    color: rgb(240, 235, 230);
+    font-size: 18px;
+    float: right;
+    margin-bottom: 22px;
+    margin-right: 22px;
+}
+
+.next-page a:hover {
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+#top_meta {
+    background-color: rgb(240, 235, 230);
+    margin-top: 0px;
+    margin-bottom: 38px;
+}
+
+#container_list2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
