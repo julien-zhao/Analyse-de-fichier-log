@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.title-carte {
+    text-align: center;
+    margin: 30px;
+    padding: 8px;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #98b0d2;
+    border-radius: 10px;
+    color: rgb(247, 244, 241);
+}
+
+.carte {
+    border-radius: 8px;
+    border: solid 1.9px rgb(158, 181, 202);
+    margin: 20px;
+}
+
+svg {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+svg path {
+    fill: rgb(94, 141, 188);
+    stroke: #eee;
+    stroke-width: 0.001%;
+}
+
+svg path:hover {
+    fill: rgb(45, 116, 183);
+    cursor: pointer;
+}
