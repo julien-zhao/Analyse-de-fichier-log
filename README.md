@@ -26,5 +26,5 @@ Log File Analyzer is a tool designed to analyze log files using various visualiz
    
 Usage
 
-    Upload a log file using the interface.
-    View and interact with visualizations to gain insights into the data.
+1. Upload a log file using the interface.
+2. View and interact with visualizations to gain insights into the data.
